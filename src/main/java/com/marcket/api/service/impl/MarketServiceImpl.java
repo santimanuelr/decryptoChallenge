@@ -10,7 +10,11 @@ import java.util.List;
 @Service
 public class MarketServiceImpl implements MarketService {
 
-    private MarketRepository marketRepository;
+    private final MarketRepository marketRepository;
+
+    public MarketServiceImpl(MarketRepository marketRepository) {
+        this.marketRepository = marketRepository;
+    }
 
     @Override
     public List<Market> getAllMarkets() {
