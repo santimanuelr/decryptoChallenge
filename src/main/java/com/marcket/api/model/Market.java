@@ -1,9 +1,6 @@
 package com.marcket.api.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Set;
@@ -13,12 +10,13 @@ import java.util.Set;
 public class Market {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String code;
     private String description;
     @ManyToOne
     private Country country;
-    @ManyToMany
-    private Set<Commiter> commiters;
+    @OneToMany
+    private Set<Share> shares;
 
 }
