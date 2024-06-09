@@ -54,7 +54,6 @@ public class MarketControllerTest {
                 .andExpect(jsonPath("$.id").value(1L))
                 .andExpect(jsonPath("$.code").value(MARKET_CODE));
 
-        // Assert the response status and body
         verify(marketService).saveMarket(any()); // Verify service interaction
     }
 
