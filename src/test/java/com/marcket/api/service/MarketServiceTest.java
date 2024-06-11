@@ -31,7 +31,7 @@ public class MarketServiceTest {
     private CountryRepository countryRepository;
 
     @Test
-    public void saveMarket() {
+    public void saveMarketTest() {
         //Given
         Market market = new Market();
         market.setCode(MARKET_CODE);
