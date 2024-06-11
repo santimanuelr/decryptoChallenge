@@ -62,7 +62,7 @@ public class ShareServiceTest {
         assertNotNull(shareSaved);
         assertEquals(SHARE, shareSaved.getShare());
 
-        verify(shareRepository).save(eq(share)); // Verify service interaction
+        verify(shareRepository).save(share); // Verify service interaction
         verify(marketRepository).findById(eq(1L));
     }
 }

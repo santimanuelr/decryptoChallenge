@@ -32,7 +32,7 @@ public class CommiterControllerTest {
 
 
     @Test
-    public void testCreateCommiter() throws Exception {
+    void testCreateCommiter() throws Exception {
 
         Commiter commiter = new Commiter();
         commiter.setDescription(COMMITER_DESCRIPTION);

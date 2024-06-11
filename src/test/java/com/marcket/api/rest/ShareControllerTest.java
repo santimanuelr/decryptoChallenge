@@ -34,7 +34,7 @@ public class ShareControllerTest {
     private ShareService shareService;
 
     @Test
-    public void testCreateShare() throws Exception {
+    void testCreateShare() throws Exception {
         // Create a mock Share object
         Market mockMarket = new Market();
         mockMarket.setId(1L);

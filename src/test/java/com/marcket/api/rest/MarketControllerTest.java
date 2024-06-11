@@ -33,7 +33,7 @@ public class MarketControllerTest {
 
 
     @Test
-    public void testCreateMarket() throws Exception {
+    void testCreateMarket() throws Exception {
 
         Market market = new Market();
         market.setCode(MARKET_CODE);
