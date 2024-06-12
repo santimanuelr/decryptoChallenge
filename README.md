@@ -19,6 +19,10 @@ muchos comitentes.
 * De existir entidades complementarias deben estar pre-cargadas al
 momento de usar la API.
 
+## Domain
+
+![Image of domain](https://github.com/santimanuelr/decryptoChallenge/blob/main/docs/diagram.jpg)
+
 ## [Development]
 You can run the project with the command
 
