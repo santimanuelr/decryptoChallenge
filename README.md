@@ -41,7 +41,7 @@ Once you start the project, you can visit [http://localhost:8080/swagger-ui/inde
 ### Nice to have
 
 * Dockerize the app in order to be easier the deploys
-* Improve errors message
+* Improve error messages
 * Add DTOs objets in order to avoid using the entities into the controllers
 * Move some common code to Utils class
 * Improve validations
