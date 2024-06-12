@@ -37,3 +37,11 @@ mvn test
 ```
 
 Once you start the project, you can visit [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) for see api documentation
+
+### Nice to have
+
+* Dockerize the app in order to be easier the deploys
+* Improve errors message
+* Add DTOs objets in order to avoid using the entities into the controllers
+* Move some common code to Utils class
+* Improve validations
