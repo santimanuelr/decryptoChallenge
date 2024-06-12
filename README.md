@@ -1,5 +1,5 @@
-# Decrypto Challenge
-Challenge tecnico para decrypto
+# Decrypto Challenge [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santimanuelr_decryptoChallenge&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santimanuelr_decryptoChallenge)
+Challenge tecnico para decrypto 
 
 ## Objetivo:
 El principal objetivo es construir una API REST con las operaciones CRUD
