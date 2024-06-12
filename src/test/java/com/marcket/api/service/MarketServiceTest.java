@@ -54,6 +54,7 @@ public class MarketServiceTest {
     public void failSaveMarketCountryNotFoundException() {
         //Given
         Market market = getMockMarket();
+        market.setCountry(Country.builder().id(99L).build());
         Country countryArg = Country.builder().code("ARG").name("Argentina").build();
 
         //When
@@ -68,7 +69,7 @@ public class MarketServiceTest {
         Market market = new Market();
         market.setCode(MARKET_CODE);
         market.setDescription("Market Description");
-        market.setCountry(Country.builder().id(99L).build());
+        market.setCountry(Country.builder().id(1L).build());
         return market;
     }
 
