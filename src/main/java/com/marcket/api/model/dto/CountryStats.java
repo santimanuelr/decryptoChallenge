@@ -1,11 +1,16 @@
 package com.marcket.api.model.dto;
 
-import java.util.HashMap;
-import java.util.List;
+import lombok.Builder;
+import lombok.Data;
 
+import java.math.BigDecimal;
+
+@Data
+@Builder
 public class CountryStats {
 
     private String country;
-    private HashMap<String, DistributionMarket> market;
+    private String market;
+    private BigDecimal percentage;
 
 }

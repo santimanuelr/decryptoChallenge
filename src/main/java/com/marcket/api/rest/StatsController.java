@@ -4,7 +4,6 @@ import com.marcket.api.model.dto.CountryStats;
 import com.marcket.api.service.MarketService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,9 +19,8 @@ public class StatsController {
         this.marketService = marketService;
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<List<CountryStats>> getShareById(@PathVariable Long id) {
-        //todo
-        return ResponseEntity.ok(null);
+    @GetMapping("/")
+    public ResponseEntity<List<CountryStats>> getStats() {
+        return ResponseEntity.ok(marketService.getStats());
     }
 }
