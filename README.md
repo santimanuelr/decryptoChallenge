@@ -17,4 +17,19 @@ muchos comitentes.
 * Un Mercado tiene Id, Código, Descripción, País.
 * Los países admitidos son Argentina y Uruguay.
 * De existir entidades complementarias deben estar pre-cargadas al
-momento de usar la API. 
+momento de usar la API.
+
+## [Development]
+You can run the project with the command
+
+```
+mvn spring-boot:run
+```
+
+Run the test
+
+```
+mvn test
+```
+
+Once you start the project, you can visit [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) for see api documentation
